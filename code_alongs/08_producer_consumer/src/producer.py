@@ -16,7 +16,6 @@ data_path = Path(__file__).parents[1] / "data"
 print (data_path)
 
 # This opens the jokes.json file in read mode. It assumes that the file exists in the data folder.
-
 with open(data_path / "jokes.json", "r") as file:
     # This loads the data from the jokes.json file into the jokes variable. It's like reading the jokes into the program, so you can work with them.
     jokes = json.load(file)
@@ -59,5 +58,5 @@ def main():
 # This ensures that the main() function runs only when this script is run directly (not when imported into another script).
 if __name__ == '__main__':
     # pprint(jokes)
-    # This actually runs the main() function, which sends the jokes to Kafka.
+    # This actually runs the main() function, which sends the jokes to Kafka.docker
     main()
